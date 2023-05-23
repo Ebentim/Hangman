@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HAngman game by Level one">
+  <meta name="author" content="Olayuwa Timilehin Ebenezer">
+  <meta name="generator" content="Hugo 0.72.0">
+  <title>Hangman . Level one</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+  <header>
+    <marquee behavior="scroll" scrollamount ="3" class="bg-primary text-white m-0">
+      <h1 id="marquee" class="fs-3">Hangman Level One</h1>
+    </marquee>
+    <div class="bg-danger text-white text-center mt-0">
+      <p id="hint"></p>
+    </div>
+  </header>
+  <nav>
+    <div class="container-fluid">
+      <div class="row bg-primary" id="information">
+        <div class="col 2-2 text-white text-left">
+          <h5 id="category">Category: Animals</h5>
+        </div>
+        <div class="col 2-2 text-white text-left">
+          <h5 id="level">Level:</h5>
+        </div>
+        <div id="ScoreRow" class="col 2-2 text-white text-left">
+          <h5 id="score">Score:</h5>
+        </div>
+      </div>
+      <div id="completed" class="row bg-primary text-white" style="display: none;"></div>
+    </div>
+  </nav>
+  <main class="row">
+    <div class="container-fluid mb-5 col-12 col-md-7">
+          <img src="/images/Hanger.png" style="max-height: 40vh; height:auto;" id="hanger" alt="hanger pole">
+          <img src="/images/treeHead.png" alt="The handman's head has shown" id="head" style="max-height: 40vh; height:auto; display: none;">
+          <img src="/images/treeBody.png" alt="The body has shown" id="body" style="max-height: 40vh; height:auto; display: none;">
+          <img src="/images/treeRightHand.png" alt="Three right hand has shown" id="rightHand" style="max-height: 40vh; height:auto; display: none;">
+          <img src="/images/treeLeftHand.png" alt="the left hand has shown" id="leftHand" style="max-height: 40vh; height:auto; display: none;">
+          <img src="/images/treerRighttLeg.png" alt="the right leg has shown" id="rightLeg" style="max-height: 40vh; height:auto; display: none;">
+          <img src="/images/treeLeftLeg.png" alt="The left leg has show" id="leftLeg" style="max-height: 40vh; height:auto; display: none;">
+    </div>
+    <div class="m-auto col-12 col-md-3">
+      <p class="alert alert-primary" id="correctWord" style=" display:none; max-height: 300px ; max-width: 300px;"></p>
+    </div>
+  </main>
+  <div class="container-fluid row m-auto">
+          <input type="text" id="userInput" class="col-12 col-md-8 p-2 text-left text-dark border-end border-start border-top" style="outline: none; background-color: #e8f0fe; margin: auto;">
+          <div class="text-center col-12 col-md-3 btn btn-primary rounded-3" id="submit">Next</div>
+          <div class="text-center col-12 col-md-3 btn btn-primary rounded-3" style="display: none;" id="proceed">Proceed</div>
+  </div>
+<script src="/js/stageone.js"></script>
+  <!-- <script src="/js/bootstrap.bundle.js"></script> -->
+</body>
+</html>
