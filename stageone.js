@@ -84,9 +84,6 @@ function scoreLevelIncreament(){
     proceed.style.display = "block"
     submitButton.style.display = "none"
     userEntry.disabled = true
-  //   proceed.addEventListener("click", ()=>{
-  //     location.replace("html/stagetwo.html")
-  //   })
   }
 }
 
