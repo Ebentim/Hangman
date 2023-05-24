@@ -34,19 +34,19 @@ function select(){
 
   choiceWord = word[validInput];
   if(validInput < 6){
-    hint.textContent = "Jungle Animal: This animal has back fur with a white belly and is known for its incredible strength";
+    hint.textContent = `Jungle Animal: Has black fur with a white belly and is known for its incredible strength. it has ${choiceWord.length} letters`;
     console.log(choiceWord)
   } else if(validInput == 6 || validInput <=11){
-    hint.textContent = "Bird: This bird has a colorful plumage and can make a loud and distinctive call";
+    hint.textContent = `Bird: Has a colorful plumage and can make a loud and distinctive call. it has ${choiceWord.length} letters`;
     console.log(choiceWord)
   } else if (validInput == 12 || validInput <= 17){
-    hint.textContent = "Sea Creature: This creature is known for its intelligence and is able to communicate with others of its kind through a series of clicks and whistles";
+    hint.textContent = `Sea Creature: Known for its intelligence and is able to communicate with others of its kind through a series of clicks and whistles. it has ${choiceWord.length} letters`;
     console.log(choiceWord)
   } else if (validInput==18 || validInput <=23){
-    hint.textContent = "Domestic Animal: This animal is often kept as a  pet and is known for its loyalty and friendly nature";
+    hint.textContent = `Domestic Animal: Often kept as a  pet and is known for its loyalty and friendly nature. it has ${choiceWord.length} letters`;
     console.log(choiceWord)
   } else if(validInput>23){
-    hint.textContent = `Reptile: This animal is known for its ability to slither and move silently`;
+    hint.textContent = `Reptile: Known for its ability to slither and move silently. it has ${choiceWord.length} letters`;
     console.log(choiceWord)
   }
   return choiceWord 
